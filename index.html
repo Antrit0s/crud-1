@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body data-bs-theme="dark">
+
+
+    <div class="container">
+        <h1 class="text-center mt-5">Crud System</h1>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="ProductName" placeholder="Product Name">
+            <label for="ProductName">Product Name</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="number" class="form-control" id="ProductPrice" placeholder="Product Price">
+            <label for="ProductPrice">Product Price</label>
+        </div>
+        <div class="form-floating mb-3">
+            <datalist id="catg">
+                <option value="TV"></option>
+                <option value="mobile"></option>
+                <option value="laptop"></option>
+                <option value="PC"></option>
+            </datalist>
+            <input type="text" list="catg" class="form-control" id="ProductCategory" placeholder="Product Category">
+            <label for="ProductCategory">Product Category</label>
+        </div>
+        <div class="mb-3">
+            <label for="productDesc" class="form-label">Product Description</label>
+            <textarea class="form-control" id="productDesc" rows="3"></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="Productimg">Product img</label>
+            <input type="file" class="form-control" id="Productimg" placeholder="Product img">
+        </div>
+        <button class="btn btn-outline-info" onclick="addProduct()">Add product</button>
+    </div>
+
+
+    <div class="mb-3 w-50 mx-auto">
+        <label for="search" class="form-label">Email address</label>
+        <input type="search" class="form-control" id="search" placeholder="Search by name...">
+    </div>
+
+
+
+    <div class="container my-5">
+        <div id="row" class="row mt-3 g-4">
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
